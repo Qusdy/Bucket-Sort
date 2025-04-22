@@ -24,7 +24,7 @@ public class BucketSort {
                 while (k >= 0 && buckets[i].get(k) > key) {
                     buckets[i].set(k + 1, buckets[i].get(k));
                     k--;
-                    //numOfIterations++;
+                   // numOfIterations++;
                 }
                 buckets[i].set(k + 1, key);
             }
@@ -35,6 +35,7 @@ public class BucketSort {
             for (int j = 0; j < buckets[i].size(); ++j) {
                 ans[k] = buckets[i].get(j);
                 k++;
+                //numOfIterations++;
             }
         }
         //System.out.println(numOfIterations); // Считаем кол-во итераций
